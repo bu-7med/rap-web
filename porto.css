@@ -1,0 +1,128 @@
+.portofolio
+{
+    background-color: #f3f3f3;
+}
+
+.container .portofolio-content
+{
+    position: relative;
+   margin-left: 195px;
+}
+
+.portofolio-content
+{
+    overflow: hidden;
+}
+
+.portofolio-item
+{
+   width: 25%;
+   float: left;
+   margin-bottom: 60px;
+   position: relative;
+   padding: 20px;
+}
+
+.portofolio-item img
+{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 5%;
+}
+
+.portofolio-item.mg 
+{
+    margin: 0 5%;
+}
+
+.portofolio-item.bu
+{
+    height: 325px;
+}
+
+
+.portofolio-item .layer-content
+
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: opacity 0.5s;
+    visibility: hidden;
+}
+
+.portofolio-item:hover .layer-content
+{
+    opacity: 1;
+    visibility: visible;
+}
+
+.layer-content .layer-info
+{
+     position: absolute;
+     
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%,-50%);
+     width: 80%;
+     text-align: center;
+}
+
+.layer-content .category
+{
+     text-transform: uppercase;
+     display: block;
+     color:var(--maincolor) ;
+     position: relative;
+     top: 10px;
+     transition: top 0.5s, opacity 0.5s;
+     transition-delay: 0.2s;
+     opacity: 0;
+     visibility: hidden;
+
+     
+}
+
+.layer-content .layer-title
+{
+  
+   color: rgb(214, 224, 232);
+     position: relative;
+     top: 10px;
+     transition: top 0.5s, opacity 0.5s;
+     transition-delay: 0.3s;
+     opacity: 0;
+     
+     visibility: hidden;
+}
+
+
+
+
+.layer-content .a
+{
+    background-color: var(--maincolor) ;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    line-height: 25px;
+    position: relative;/*34an a7arak el icon*/
+    top: 10px;
+    transition: top 0.5s, opacity 0.5s;
+    transition-delay: 0.4s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.portofolio-item:hover .layer-content .layer-title
+,.portofolio-item:hover .layer-content .a
+,.portofolio-item:hover .layer-content .category
+{
+ top: 0;
+ opacity: 1;
+ visibility: visible;
+}

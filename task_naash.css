@@ -1,0 +1,96 @@
+.head
+{
+    text-align: center;
+    color: blueviolet;
+}
+
+.head:hover
+{
+  text-shadow: 0 0 10px #f0f;
+}
+
+.father
+{
+    width: 170px;
+    height: 4px;
+    position: relative;
+    margin-left:652px;
+    bottom: 20px;
+    background-color: rgba(169,169,169,0.4); 
+    border-radius: 20px;
+}
+.child
+{
+    position: absolute;
+    height: 4px;
+    width: 40px;
+    opacity: 0.8;
+    background-color: magenta;
+    margin-left: 65px;
+    border-radius: 20px;
+}
+
+.hamada
+{
+    height: 380px;
+    width: 660px;
+    margin-left: 420px;
+    position: relative;
+    top: 100px;
+}
+
+.hamada .zaf
+{
+  background-color: rgba(169,169,169,0.4);
+  width: 200px;
+  height: 170px;
+  margin: 10px;
+  float: left;
+  
+}
+
+.cam
+{
+    width: 40px;
+    height: 30px;
+    position: relative;
+    left: 82px;
+    top: 30px;
+}
+
+.engez
+{
+    position: relative;
+    top: 40px;
+    left: 38%;
+   
+}
+
+.obaa
+{
+    
+   
+    margin-right:150px;
+}
+
+body {
+    background-image: url("images/khalf.jpg");
+    background-size: cover;       /* تخلي الصورة تغطي الشاشة كلها */
+    background-position: center;  /* تخلي الصورة في النص */
+    background-repeat: no-repeat; /* تمنع التكرار */
+}
+
+.hamada .zaf:hover h6
+{
+    color:blueviolet;
+    transform: translateY(0);  /* ينزل لمكانه */
+    visibility: visible; 
+}
+
+h6{
+    position: relative;
+    top: 36px;
+     visibility: hidden; 
+    transform: translateY(-20px); /* في الأول فوق ومخفي */
+    transition: all 0.5s ease;   /* الحركة */
+}

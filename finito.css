@@ -1,0 +1,156 @@
+/*input[type="text"]    /*da 34an a7ded y3ml el css 3ala eh*/
+/*{
+    background-color: brown;
+    position: relative;
+    top: 30px;
+}
+
+input[type="password"]/*da 34an a7ded y3ml el css 3ala eh*/
+/*{
+    background-color: brown;
+    position: relative;
+    top: 30px;
+}
+
+/*h2 , p , body , ul {
+    margin: 0;
+}*/
+
+*{/*da mota7akem bkol 7aga fi el saf7a*/
+ padding: 0;
+ margin: 0;
+}
+
+.navi
+{
+    background-color: #333;
+
+}
+
+.navi h2{
+    font-size: 22px;
+    color: #fff;
+    width: 20%;
+    height: 35px;
+    background-color: red;
+    float: left;
+}
+
+.navi ul{
+
+    list-style: none;
+    width: 80%;
+   
+    float: left;
+}
+
+.navi > ul li
+{
+    display: inline-block;
+   
+}
+
+.navi > ul li a
+{
+    color: #e05050;
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+}
+
+.navi > ul li a:hover + ul{
+  display: block;
+}
+
+.navi > ul li 
+{
+    position: relative;
+
+}
+
+.navi > ul li ul
+{
+    position: absolute;
+    display: none;
+}
+
+.clear
+{
+    clear: both;
+}
+
+form input , form select
+{
+    display: block;
+    width: 100%;
+}
+
+
+form input:focus
+{
+    background-color: #e05050;
+}
+
+.uli li{
+    vertical-align: middle;
+}
+
+.uli li::before
+{
+    content:"";
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background-color: #e05050;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+html{
+    font-size: 16px;
+}
+
+.papa
+{
+    font-size: 15px;
+}
+
+.nono
+{
+    background-color: darkgreen;
+   /* margin: 2em;/*معناه ان هو 2 مضروبة بمقدار ال font size*/
+    /*margin: 2rem;/*معناه ان هو 2 مضروبة بمقدار ال font size بتاعة ال html*/
+    height: 10vw;
+}
+
+p.item /*lazi2in fi ba3d da 3onsor wa7ed*/
+{
+   color: darkslateblue;
+}
+
+.item.test.orange
+{
+    color: aqua;
+}
+
+#edita
+{
+    color: gold;
+}
+
+.acalces
+{
+    color: aquamarine;
+}
+
+
+
+.gallery/*el text align bt4ta8al ma3 kol 3anaser el inline block*/
+{
+    text-align: center;
+  
+}
+
+img{
+    float: left;
+}

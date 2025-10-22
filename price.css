@@ -1,0 +1,140 @@
+.pricing
+{
+
+}
+
+.pricing-plans
+{
+   overflow: hidden;
+}
+
+.pricing-items
+{
+     width: 30%;
+     float: left;
+     padding: 40px 15px;
+     border: 1px solid #e8e8e8;
+     text-align: center;
+}
+
+.pricing-items.mg{
+   margin: 0 5%;
+}
+
+ .pricing-text
+ {
+    text-transform: uppercase;
+    font-size: 17px;
+    color: #999;
+    transition: color 0.5s;
+ }
+
+ .pricing-month
+ {
+    width: 130px;
+    height: 130px;
+    padding:20px 0 ;
+    margin: 20px auto;
+    border: 2px solid var(--maincolor) ;
+    border-radius: 50%;
+ }
+
+ .pricing-items  .pricing-month .dollar
+ {
+    font-size: 50px;
+    font-family: "Bebas Neue", sans-serif;
+    transition: color 0.5s;
+ }
+
+  .pricing-items  .pricing-month .month
+  {
+     font-family: "Bebas Neue", sans-serif;
+     text-transform:uppercase ;
+     transition: color 0.5s;
+  }
+
+  .pricing-items ul{
+    list-style: none;
+  }
+
+.pricing-items ul li
+ {
+         color: #999;
+         line-height: 1.8;
+         margin-bottom: 20px;
+         transition: color 0.5s;
+ }
+
+.pricing-items .pricing-purchase
+{
+    background: none;
+    border: 0;
+    width: 90px;
+    height: 28px;
+    border: 2px solid var(--maincolor) ;
+    transition: color 0.5s;
+    border-radius: 5px;
+}
+
+.ltr-effect-pricing
+{
+    position: relative;
+}
+
+.ltr-effect-pricing::after
+{
+    position: absolute;
+    content: "";
+    z-index: -1;
+    display: block;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: var(--maincolor) ;
+    transition: height 0.5s ;
+}
+
+.ltr-effect-pricing:hover::after
+{
+    height: 100%;
+}
+
+.pricing-items:hover .pricing-month .dollar,
+.pricing-items:hover .pricing-month .month,
+.pricing-items:hover .pricing-purchase {
+    color: aliceblue;
+    
+}
+
+.pricing-items:hover .pricing-purchase
+{
+    border: 2px solid var(--mainghamek);
+}
+
+.pricing-items:hover .pricing-month
+{
+    width: 130px;
+    height: 130px;
+    padding:20px 0 ;
+    margin: 20px auto;
+    border: 2px solid var(--mainghamek);
+    border-radius: 50%;
+}
+
+.pricing-items:hover .pricing-text
+{
+    
+    text-transform: uppercase;
+    font-size: 17px;
+    color:var(--mainghamek);
+    transition: color 0.5s;
+}
+
+.pricing-items:hover .pricing-ul
+{
+         color: black;
+         line-height: 1.8;
+         margin-bottom: 20px;
+         transition: color 0.5s;
+}

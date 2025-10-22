@@ -1,0 +1,45 @@
+.numbers
+{
+    position: relative;
+    background-image: url(images/num.jpeg);
+    height: 20px;
+     background-repeat: no-repeat;   /* تمنع التكرار */
+    background-size: cover;        /* تخليها تغطي كل المساحة */
+   background-position: center;   /* تخليها في النص */
+   background-attachment: fixed;
+   margin: 150px 0;
+}
+
+.numbers-items
+{
+    overflow: hidden;
+    padding: 60px 0;
+    color: var(--maincolor) ;
+}
+
+.numbers-item
+{
+    width: 25%;
+    float: left;
+    text-align: center;   
+}
+
+.numbers-item .icon
+{
+    margin-bottom: 15px;
+}
+
+.numbers-item .number-title
+{
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: #fff;
+    font-family: "Nerko One", cursive;
+}
+
+.numbers-item .number-text
+{
+    color: #fff;
+    font-family: "Nerko One", cursive;
+}

@@ -1,0 +1,304 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container
+{
+    margin: auto;
+    width: 96%;
+}
+
+.header{
+font-family: "Nerko One", cursive;
+font-weight: 400;
+font-style: normal;
+background-color: rgba(0,0,0,0.2);
+position: fixed;
+width: 100%;
+z-index: 2;
+  
+}
+/*header*/
+
+
+
+.header .logo
+{
+    width: 40%;
+    float: left;
+}
+
+.header .nav
+{
+    width: 60%;
+    float: left;
+    list-style: none;
+    text-align: right;
+   
+}
+
+.header-container
+{
+   /* 
+   overflow: hidden; --> مستغدمنهاش عشان مينفعش نعمل دربو داون و احنا عاملين overflow:hidden
+   */
+
+}
+
+.clear
+{
+    clear: both;
+}
+
+.header .logo img
+{
+    width: 23%;
+}
+
+.header .nav > li
+{
+    display: inline-block;
+}
+
+.header .nav > li > a 
+{
+    color: aliceblue;
+    text-decoration: none;
+    display: block;
+    padding: 10px 19px;
+  
+}
+
+.header .nav > li > a.active:after
+{
+   content: "";
+ display: block;
+ width: 100%;
+ height: 3px;
+ background-color: var(--maincolor);
+ transition: width 0.5s ;
+ margin-top: 2px;
+}
+
+.header .nav > li > a:after
+{
+ content: "";
+ display: block;
+ width: 0;
+ height: 3px;
+ background-color: var(--maincolor);
+ transition: width 0.5s ;
+  margin-top: 2px;
+}
+
+.header .nav > li > a:hover::after
+{
+    width: 100%;
+}
+
+.home
+{
+    height: 100vh;
+    background-image:url(images/rap4.jpeg);
+    background-repeat: no-repeat;   /* تمنع التكرار */
+    background-size: cover;        /* تخليها تغطي كل المساحة */
+   /* background-position: center;   /* تخليها في النص */
+   position: relative;
+}
+
+.home .title 
+{
+    color: var(--maincolor);
+}
+
+.home .title
+{
+    font-size: 3.6rem;
+    text-transform: uppercase;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+button
+{
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.overlay
+{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   bottom: 0;
+   background-color: rgba(0,0,0,0.7);
+}
+
+.opacity-hover
+{
+    transition: opacity 0.5s;
+}
+
+.opacity-hover:hover
+{
+    opacity: 0.8;
+}
+
+.home-desc{
+    color: rgb(110, 64, 126);
+    font-family: "Libertinus Serif Display", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+}
+
+.home-container
+{
+    position: absolute;
+
+    top: 50%;
+    left: 28%;
+    transform:(-50%,-50%);
+    margin-right: 500px;
+    text-align: center;
+}
+
+.home .home-desc
+{
+    margin: 17px 0;
+}
+
+.home .btn{
+   width: 140px;
+   padding: 10px 0;
+   border-radius: 5px;
+   border: 0;
+   cursor: pointer;
+   font-size: 15px;
+}
+
+
+
+.home .btn-start
+{
+ margin-right: 7px;
+ background-color: aliceblue;
+}
+
+.home .btn-learn
+{
+    background-color: var(--maincolor) ;
+   
+}
+
+/*
+   position fixed,position absolute tranform (diplay block> --to--> (display inline block)
+*/
+a
+{
+    text-decoration: none;
+}
+.dropDown
+{
+    position: relative;
+    display: inline-block;
+}
+
+.drop-menu
+{
+    position: absolute;
+    
+    text-align: center;
+    left: 25%;
+    width: 60px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s , vivibility 0.5s;
+}
+
+.drop-menu a
+{
+    color: white;
+   text-decoration: none;
+   background-color: var(--maincolor) ;
+}
+
+.drop-menu li{
+   list-style: none;
+  
+}
+
+
+.dropDown:hover .drop-menu
+{
+    opacity: 1;
+    visibility: visible;
+}
+
+.section-header
+{
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 50px;
+}
+
+.section-header .line
+{
+    display:block;
+    height: 5px;
+    width: 50px;
+    background-color:var(--maincolor) ;
+    margin: 10px auto 70px auto;
+    border-radius: 15px;
+}
+
+.pd-y
+{
+   padding: 100px 0;
+   margin-top: 100px;
+}
+
+
+:root
+{
+    --maincolor:rgb(198, 153, 232); 
+    --graycolor:var(--mainghamek);;
+    --bg-gray:#f9f9f9;
+    --whitecolor:#fff;
+    --mainghamek:rgb(122, 84, 211);
+}
+
+
+/*about*/
+
+
+
+/*prtofolio*/
+
+/*offer*/
+
+/*service*/
+
+/*numbers*/
+
+
+/*pricing*/
+
+
+/*testomonial*/
+
+/*team*/
+
+
+/*Blog*/
+
+
+
+/*get*/
+/*contact section*/
+
+
+
+/*footer section*/

@@ -1,0 +1,44 @@
+.mg-5
+{
+    margin-bottom: 5px;
+}
+
+.mg-10
+{
+    margin-bottom: 10px;
+}
+
+.mg-15
+{
+    margin-bottom: 15px;
+}
+
+.mg-20
+{
+    margin-bottom: 20px;
+}
+
+.mg-25
+{
+    margin-bottom: 25px;
+}
+
+.uppercase
+{
+    text-transform: uppercase;
+}
+
+.capatalize
+{
+    text-transform: capitalize;
+}
+
+.float-left
+{
+    float: left;
+}
+
+.overflow
+{
+    overflow: hidden;
+}

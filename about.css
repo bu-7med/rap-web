@@ -1,0 +1,76 @@
+
+.about-content
+{
+    overflow: hidden;
+}
+
+.about-item
+{
+    width: 30%;
+    float: left;
+    text-align: center;
+    border: 1px solid rgb(236, 230, 230);
+    padding: 10px;
+}
+
+.about-item.mg
+{
+    margin: 0 5%;
+}
+
+.about-item .icon
+{
+    color:var(--mainghamek);
+    
+}
+
+.about-item .about-title
+{
+    text-transform: capitalize;
+    
+    font-family: "Libertinus Serif Display", system-ui;
+    transition: color 0.5s;
+}
+
+.about-item .about-p
+{
+    line-height: 1.2;
+    
+    color: rgb(45, 44, 44);
+}
+
+.about-item .zorar
+{
+    color:var(--mainghamek);
+    text-transform: capitalize;
+}
+
+.ltr-effect
+{
+    position: relative;
+}
+
+.ltr-effect::after
+{
+    position: absolute;
+    content: "";
+    z-index: -1;
+    display: block;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--maincolor) ;
+    transition: width 0.5s ;
+}
+
+.about-item:hover .about-title
+{
+    color: aliceblue;
+    
+}
+
+.ltr-effect:hover::after
+{
+    width: 100%;
+}

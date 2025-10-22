@@ -1,0 +1,39 @@
+
+.offer-content
+{
+    overflow: hidden;
+}
+
+.offer-item
+{
+    width: 30%;
+    float: left;
+    border: 1px solid #e8e8e8;
+    padding: 30px 15px 20px 70px;
+    position: relative;
+}
+
+.offer-item.mg
+{
+   margin: 0 5%; 
+}
+
+.offer-item .icon
+{
+  position: absolute;
+  left: 15px;
+  top: 36px;
+  color:var(--mainghamek);
+}
+
+.offer-item .offer-title
+{
+    text-transform: capitalize;
+    line-height: 1.6;
+    transition: color 0.5s;
+}
+
+.offer-item:hover .offer-title
+{
+    color:aliceblue;
+}

@@ -1,0 +1,712 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: auto;
+    width: 96%;
+}
+
+.header {
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    
+
+}
+
+/*header*/
+
+.home
+{
+    padding-top: 69px;
+}
+
+.header .logo {
+    width: 40%;
+    float: left;
+}
+
+.header .nav {
+    width: 60%;
+    float: left;
+    list-style: none;
+    text-align: right;
+
+}
+
+.header-container {
+    /* 
+   overflow: hidden; --> مستغدمنهاش عشان مينفعش نعمل دربو داون و احنا عاملين overflow:hidden
+   */
+
+}
+
+.clear {
+    clear: both;
+}
+
+.header .logo img {
+    width: 23%;
+}
+
+.header .nav>li {
+    display: inline-block;
+}
+
+.header .nav>li>a {
+    color: aliceblue;
+    text-decoration: none;
+    display: block;
+    padding: 10px 19px;
+
+}
+
+.header .nav>li>a.blog:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: var(--maincolor);
+
+    margin-top: 2px;
+}
+
+.header .nav>li>a:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: var(--maincolor);
+    transition: width 0.5s;
+    margin-top: 2px;
+}
+
+.header .nav>li>a:hover::after {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.dropDown {
+    position: relative;
+    display: inline-block;
+}
+
+.drop-menu {
+    position: absolute;
+    text-align: center;
+    left: 25%;
+    width: 60px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, vivibility 0.5s;
+}
+
+.drop-menu a {
+    color: white;
+    text-decoration: none;
+    background-color: var(--maincolor);
+
+}
+
+.drop-menu li {
+    list-style: none;
+
+}
+
+.dropDown:hover .drop-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.section-header {
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 50px;
+}
+
+.section-header .line {
+    display: block;
+    height: 5px;
+    width: 50px;
+    background-color: var(--maincolor);
+    margin: 10px auto 70px auto;
+    border-radius: 15px;
+}
+
+.pd-y {
+    padding: 100px 0;
+    margin-top: 100px;
+}
+
+
+:root {
+    --maincolor: rgb(198, 153, 232);
+    --graycolor: var(--mainghamek);
+    ;
+    --bg-gray: #f9f9f9;
+    --whitecolor: #fff;
+    --mainghamek: rgb(122, 84, 211);
+}
+
+/*blog*/
+
+.blogi {
+
+    background-color: #f3f3f3;
+    height: 120px;
+    width: 100%;
+    margin-bottom: 75px;
+}
+
+
+.blog-page-home {
+    width: 85%;
+    margin: auto;
+
+}
+
+.blog-item {
+
+    overflow: hidden;
+    padding-top: 40px;
+}
+
+.blog-page {
+    float: left;
+    width: 30%;
+
+}
+
+.shemal {
+    margin: 13px 0 0 40%;
+    color: #999;
+    font-size: 12px;
+    font-family: "Nerko One", cursive;
+}
+
+.blog-item .blog-page a {
+    color: #999;
+}
+
+.blog-item .blog-page a:hover {
+    color: rgb(122, 84, 211);
+}
+
+.font-blog {
+    font-family: "Bebas Neue", sans-serif;
+}
+
+/*category*/
+
+.conti {
+    width: 85%;
+    margin: auto;
+}
+
+.category-content {
+    overflow: hidden;
+}
+
+.category-item {
+    float: left;
+    margin: 0 16px;
+}
+
+
+.category-item .maro {
+    margin-bottom: 10px;
+}
+
+.category-item .taht-soura i {
+    color: rgb(198, 153, 232);
+}
+
+.category-item .taht-soura span {
+    font-size: 15px;
+
+}
+
+.category-item .taht-soura .bayneyat {
+    display: inline;
+    margin: 0 4px;
+}
+
+.category-item .taht-soura .maro-title {
+    font-size: 15px;
+    font-family: "BBH Sans Hegarty", sans-serif;
+}
+
+.category-item .taht-soura .maro-p {
+    color: #999;
+    position: relative;
+    bottom: 15px;
+}
+
+.category-item .taht-soura .maro-p,
+.category-item .taht-soura .maro-title {
+    width: 800px;
+    display: block;
+}
+
+.category-item input {
+    margin-bottom: 35px;
+    border: none;
+    background-color: #f8f8f8;
+    height: 25px;
+    padding-left: 5px;
+    border: 1.5px solid #f8f8f8;
+    outline: none;
+    transition: border-color 0.3s;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.category-item input::placeholder {
+    color: #999;
+}
+
+.category-item input:focus {
+    border-color: rgb(198, 153, 232);
+}
+
+.search-box {
+    display: inline-block;
+    position: relative;
+
+}
+
+.search-box i {
+    position: absolute;
+    top: 5px;
+    left: 13%;
+    width: 100%;
+    height: 100%;
+    color: rgb(198, 153, 232);
+
+
+}
+
+.search-box h2,
+.search-box .section-header {
+    margin-bottom: 10px;
+}
+
+.category-item .btn {
+    list-style: none;
+}
+
+.category-item .line {
+    position: relative;
+    bottom: 35px;
+    right: 115px;
+}
+
+.category-item .khat {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 1px;
+    background-color: #e8e8e8;
+    bottom: 80px;
+    margin-top: 16px;
+}
+
+.category-users {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    bottom: 15px;
+}
+
+
+.anmat {
+    position: relative;
+    width: 200px;
+    bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Nerko One", cursive;
+}
+
+.anmat .rap-7 {
+    margin-left: 0;
+    color: rgb(122, 84, 211);
+}
+
+.anmat .cati:hover {
+    color: rgb(122, 84, 211);
+}
+
+
+/*populare*/
+
+.populare-post img {
+    width: 50px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.populare {
+
+    position: relative;
+    bottom: 70px;
+
+}
+
+.populare-post {
+    float: left;
+    margin: 0 4px;
+}
+
+.populare .info {
+    font-size: 14px;
+    font-family: "BBH Sans Hegarty", sans-serif;
+    transition: color 0.4s;
+}
+
+.populare .date {
+    font-size: 10px;
+    color: rgb(122, 84, 211);
+}
+
+.populare .populare-content {
+    display: block;
+    overflow: hidden;
+    margin: 8px 0;
+    transition: background-color 0.4s;
+    transition: box-shadow 0.4s;
+}
+
+.populare .populare-content:hover {
+    background-color: rgb(198, 153, 232);
+    height: 50px;
+    padding-top: 6px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgb(198, 153, 232);
+}
+
+.populare .populare-content:hover .populare-post .info {
+    color: white;
+}
+
+/*tags*/
+
+.tags {
+    overflow: hidden;
+}
+
+.tags-content {
+    float: left;
+    margin: 30px 8px;
+
+}
+
+.tags-item {
+    background-color: #f3f3f3;
+    width: 77px;
+    text-align: center;
+    height: 25px;
+    font-family: "Nerko One", cursive;
+    transition: box-shadow 0.5s;
+}
+
+.tags-item:hover {
+    background-color: #e8e8e8;
+    box-shadow: 2px 2px 5px gray;
+
+}
+
+.tags-content .enwan {
+    font-family: "BBH Sans Hegarty", sans-serif;
+    font-size: 13px;
+}
+
+.tags-content .kheyarat {
+    font-size: 11px;
+}
+
+.tags-content i {
+    color: rgb(198, 153, 232);
+    position: relative;
+    top: 2px;
+}
+
+/*ana*/
+
+.ana {
+    overflow: hidden;
+    border: 1.5px solid #e8e8e8;
+    width: 800px;
+}
+
+.kelmety {
+    overflow: hidden;
+    float: left;
+    margin: 20px 20px;
+    position: relative;
+}
+
+.linki span {
+    font-family: "BBH Sans Hegarty", sans-serif;
+}
+
+.linki .logos {
+    background-color: rgb(198, 153, 232);
+    color: white;
+    height: 21px;
+    width: 21px;
+    padding-top: 2px;
+    border-radius: 5px;
+    transition: box-shadow 0.5s;
+    margin: 0 1px;
+}
+
+.linki .ins {
+    padding-right: 1px;
+}
+
+.linki .logos:hover {
+    box-shadow: 2px 2px 5px rgb(198, 153, 232);
+}
+
+.kelmety .linki {
+    float: left;
+    margin: 20px 15px;
+}
+
+.kelmety .linki-logo {
+    margin-left: 240px;
+
+}
+
+.yalabina img {
+    width: 200px;
+    height: 200px;
+    transition: box-shadow 0.5s;
+    transform-origin: center center;
+    transition: transform 0.5s;
+
+}
+
+.yalabina::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* في البداية شفافة */
+    transition: background-color 0.5s;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.4s;
+    transition: opacity 0.4s;
+}
+
+.yalabina:hover img {
+
+
+
+    transform: scale(1.12);
+
+}
+
+.yalabina:hover::after {
+    visibility: visible;
+    opacity: 1;
+}
+
+.kelmety .kata {
+    position: relative;
+    display: block;
+    width: 485px;
+    height: 1px;
+    background-color: #e8e8e8;
+    margin: 70px 0 0 15px;
+}
+
+.kelmety .kalam-ani {
+    width: 400px;
+    display: inline-block;
+    margin: 30.7px 0 0 30px;
+    color: #999;
+    font-size: 14px;
+}
+
+/*tagi*/
+
+.tagi {
+    position: relative;
+    bottom: 75px;
+}
+
+.tagi-content1,
+.tagi-content2,
+.tagi-content3 {
+    overflow: hidden;
+}
+
+.tagi-content1 .tagi-item1,
+.tagi-content2 .tagi-item2,
+.tagi-content3 .tagi-item3 {
+    float: left;
+    margin: 2.5px 2px;
+    font-size: 11px;
+    font-family: "Nerko One", cursive;
+    width: 50px;
+    height: 15px;
+    background-color: #f3f3f3;
+    text-align: center;
+    transition: box-shadow 0.5s;
+}
+
+.tagi-content1 .tagi-item1:hover,
+.tagi-content2 .tagi-item2:hover,
+.tagi-content3 .tagi-item3:hover {
+    background-color: rgb(198, 153, 232);
+    box-shadow: 2px 2px 5px gray;
+    color: white;
+}
+
+.tagi-content2 .tagi-item2,
+.tagi-content3 .tagi-item3 {
+    width: 77px;
+}
+
+/*comments*/
+
+.khati h2,
+.khati .section-header {
+    position: relative;
+    top: 80px;
+
+}
+
+
+
+.khati {
+
+    margin-top: 79px;
+
+}
+
+.section-header .khit {
+    position: relative;
+    right: 368px;
+}
+
+.comments {}
+
+.borda {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    /* مسافة بين الصورة والمحتوى */
+    border: 1px solid #e8e8e8;
+    padding: 15px;
+    border-radius: 8px;
+    width: 550px;
+    margin: 15px 35px;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.borda:focus {
+    background-color: #f9f9f9;
+    border-color: rgb(198, 153, 232);
+    outline: none;
+
+}
+
+.borda:focus .joe {
+    color: rgb(198, 153, 232);
+}
+
+.comments-items {
+    float: left;
+    margin: 0 3px;
+}
+
+.comments-items img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    /* يخلي الصورة متثبتة الحجم */
+}
+
+.comments-content {
+    flex: 1;
+    overflow: hidden;
+
+}
+
+.comments-htt {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* مسافة بين الاسم والزمن */
+    margin-bottom: 5px;
+}
+
+.joe {
+    font-family: "BBH Sans Hegarty", sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.min {
+    font-size: 10px;
+    color: #999;
+    font-family: "Nerko One", cursive;
+}
+
+.rep {
+    margin-left: auto;
+    /* يخلي كلمة reply تروح لليمين */
+    font-family: "Nerko One", cursive;
+    font-size: 10px;
+    color: rgb(198, 153, 232);
+    cursor: pointer;
+}
+
+.drwila {
+    display: flex;
+    font-size: 10px;
+    color: #555;
+    line-height: 1.4;
+    font-family: "BBH Sans Hegarty", sans-serif;
+    width: 450px;
+
+}
+
+.leave-comment {
+    position: relative;
+    bottom: 100px;
+}
+
+.leave-comment input {
+    margin: 15px 35px;
+    width: 550px;
+    height: 60px;
+    padding-bottom: 25px;
+    border-radius: 8px;
+}
+
+.leave-comment input::placeholder {
+    color: #999;
+}

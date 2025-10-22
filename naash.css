@@ -1,0 +1,249 @@
+
+
+body
+{
+    height: 5000px;
+    background-color: blueviolet;
+    background-image: url(images/basha.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+     
+}
+h1{
+    max-width: 600px;
+    min-width: 500px;
+    width: 459px;
+    height: 50px;
+    background-color: brown;
+
+}
+.one
+{
+
+    color: chocolate;
+
+}
+.two
+{
+    width: 50px;
+    height: 50px;
+    background-color: brown;
+    margin-top: 50px ; /*top right butoom left*//*تاخد ارقام سالبة*/
+    padding-bottom: 100px;/*بتغير في الطول و العرض- متديش ارقام سالبة-لتوسيع المحتوى*/
+    border: 20px dotted red;
+    /*borderleft-right-hight*/
+}
+
+.three
+{
+    width: 100px;
+    height: 100px;
+    background-color: cornflowerblue;
+    overflow: auto;
+}
+
+html
+{
+  direction: ltr;
+}
+
+.text
+{
+    text-align: left;
+    color: chartreuse;
+    /* letter-spacing: 5px;
+    word-spacing: 10px; */
+    line-height: 10px;
+    text-transform: uppercase ;
+}
+ 
+a{
+     text-decoration: none;
+}
+
+.font
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+ul{
+    text-align: center;
+    list-style-type: georgian;
+    /* list-style-image: ; */
+    list-style-position: inside;
+}
+
+table
+{
+    width: 250px;
+    height: 250px;
+    caption-side: bottom;  
+}
+
+td{/*الكلام الى جوة الtable*/
+    vertical-align: middle;
+}
+
+.wadi
+{
+    width: 200px;
+    height: 200px;
+    background: #f80;
+}
+#kam
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p{/*3onsor block*/
+    /*width: 50px;
+    height: 50px;*/
+    /*background-color: aquamarine;/*3onsor block bymlah 3ard el4a4a kolo */
+    margin: 20px;
+}
+
+span{/*3onsor inline*/
+    background-color: brown;/*el span mbya5od4 3ard el 4a4a kolaha bas mo7it el kelma */
+}
+
+li
+{
+    display: inline-block;/*bya5od width w height enma el inline bas la2*/
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+.para
+{
+    color: #fff;
+    visibility: hidden;
+}
+
+.pos
+{
+
+    width: 100%;
+    height: 100px;
+    background-color: #f80;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+/*absolute: byt7arak bnsba lil saf7a
+relative:  byt7arak bnsba lil 3onsor nafso
+*/
+.child
+{
+    position: absolute;
+    bottom:  0;
+}
+/*عشان احرك ابن جوة اب لازم الب يبقى relative والابن يبقى absolute*/
+body
+{
+    height: 2000px;
+}
+
+.hero
+{
+    height: 400px;
+    background:bisque;
+    position: relative;
+    
+}
+
+.center
+{
+    width: 100px;
+    height: 100px;
+    background-color: cadetblue;
+    /*hero image*/
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.wahh
+{
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+    position: absolute;
+    z-index: 100;
+}
+
+.yaboy
+{
+    z-index: 150;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(87, 113, 48);
+    position: absolute; 
+}
+
+
+
+.parent
+{
+    background-color: darkblue;
+    height: 230px
+}
+
+.imgg
+{
+    width: 250px;
+    height: 300px ;
+    opacity: 0.8;
+}
+/*nesting*/
+.parent .item
+{
+   background-color: rebeccapurple;
+    width: 30%;
+    height: 200px;
+    margin: 10px;
+    float: left;/*الفلوت مبيلونش الباجراوند بتاعة الاب*/
+    border: #f80 solid;
+}
+
+/*pseudo class*/
+
+.imgg:hover/*active(لما اشيل ايدي من العنصر هتحصل)*/
+{
+    opacity: 1;
+    border: 2px solid rgb(132, 34, 53);
+    padding: 10px;
+}
+
+ .sodo::first-letter
+{
+   color: red;
+   font-size: 40px;
+} 
+
+.sodo::before
+{
+    content: "new line ";
+}
+
+.select > p /*awlad el select*/
+{
+  color: aquamarine;
+}
+
+.select .product p
+{
+    color: darkmagenta;
+}
+
+.select + p/*el p eli ba3d el select 3alatoul law 7atina badal el (+) 7atina (~) haya3mel kol el p el ta7to*/
+{
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
